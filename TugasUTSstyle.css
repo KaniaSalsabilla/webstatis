@@ -1,0 +1,443 @@
+* {
+  font-family: "poppins", sans-serif;
+  Line-height: 20px;
+  font-size: 15px;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.layar-dalam {
+  width: 1000px;
+  margin:auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+nav {
+  z-index: 100;
+  color: rgb(0, 0, 0) ;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid black;
+  line-height: 60px;
+  width:100%;
+  transition: background-color 0.5s ease;
+}
+
+nav.putih {
+  background-color: antiquewhite;
+}
+
+nav .logo {
+  float:left;
+  position: relative;
+  line-height:30px;
+  text-align: center;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+}
+
+nav .menu {
+  float:right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 80px;
+  color: black;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav .menu ul li .dropdown {
+  display: none;
+}
+
+
+/* pengaturan header*/
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  size: cover;
+  z-index: -2;
+}
+
+header .intro {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+
+header .intro h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.tombol {
+  background-color: orange;
+  height: 40px;
+  line-height: 42px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 50%;
+  z-index: -1;
+  
+}
+
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: white;
+}
+
+section h2 {
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+section h2 span {
+  color: orange;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+section h3 {
+  margin-left: 100px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+section h4 {
+  padding-left: 30px; 
+  padding-right: 30px;
+}
+
+section p {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: justify;
+  padding-bottom: 0px;
+}
+
+section img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav.putih {
+  background-color: whitesmoke;
+}
+ 
+nav.putih .tombol-menu .garis{
+  background-color: black;
+}
+
+nav.putih ul li a {
+  color: black ;
+}
+
+nav .putih ul li .dropdown {
+  color: black;
+}
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+section#gallery div {
+  padding: 10px;
+}
+
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+section.quote {
+  background: url("images/MN1.png") no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+}
+section.quote .layar-dalam p {
+  display: inline;
+  background: url("images/mnew.jpg") no-repeat;
+  padding: 40px;
+}
+
+.blog .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem ;
+}
+
+.blog .box-container .box {
+  border:orangered;
+}
+
+.blog .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blog .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blog .box-container .box .content {
+  padding: 2rem;
+}
+
+.blog .box-container .box .content .tittle {
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  color: rgb(67, 66, 63);
+}
+
+.blog .box-container .box .content .tittle:hover {
+  color:black
+}
+
+.blog h2 {
+  text-align: center;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.blog h2 span {
+  color: orange;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.blog .box-container .box .content span {
+  color:orange;
+  display: block;
+  padding-top: 1rem;
+  font-size: 10px;
+}
+
+.blog .box-container .box .content p{
+  font-size: 12px;
+  line-height: 1.8;
+  color: black;
+  padding:0px;
+  text-align: justify;
+}
+
+.blog .box-container .box .content .btn {
+  background-color: orange;
+  height: 40px;
+  line-height: 42px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+.contact {
+  background-color: gray;
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: black;
+  border: var(--border);
+  margin: 3rem;
+  border-radius: 50%;
+}
+
+.contact .share a:hover {
+  background-color: orange;
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2rem;
+  background: #808080;
+  border-radius: 5rem;
+  margin-right: 30px;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: black;
+  border: 1px solid black;
+  border-radius: .5rem;
+  margin:.7rem 0;
+  width: 100%;
+}
+
+.contact .row form .box:focus {
+  border-color: var(orange);
+}
+
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+}
+
+footer {
+  padding: 50px 0px 50px 0px;
+  background-color: gray;
+  color: #fff;
+}
+
+footer .credit .copyright {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+
+footer .credit .copyright a {
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 991.98px) {
+  .layar-dalam {
+    width:90%;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc ;
+    background-color: #fff;
+    line-height: 40px;
+  }
+  nav .menu ul li a {
+    color: black;
+  }
+  nav .menu ul li .dropdown {
+    color: black;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+}
